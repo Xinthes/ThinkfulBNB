@@ -52,6 +52,15 @@ main img {
 
 /* -------  Navigation ------- */
 
+section div p {
+  justify-content: center;
+}
+
+section div img {
+  padding: 8px;
+  width: 100%;
+}
+
 header {
   background-color: #ff385c;
   padding: 20px 20px 0 20px;
@@ -64,8 +73,16 @@ header {
   color: #fff;
 }
 
+
+header nav ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
 header nav ul li {
-  list-style-type: none;
+  list-style-type: none
 }
 
 header nav ul li a {
@@ -80,9 +97,11 @@ header nav ul li a:hover {
 }
 
 /* -------  Search Form ------- */
+
 form {
   border: 2px solid #ff385c;
   padding: 10px;
+  
 }
 
 form label {
@@ -91,8 +110,8 @@ form label {
 
 form select,
 form input {
-  margin-bottom: 20px;
-  width: 180px;
+  margin-bottom: 10px;
+  width: 200px;
 }
 
 form button {
@@ -117,3 +136,59 @@ footer p {
 }
 
 /* -------  Media Query ------- */
+
+@media all and (min-width: 800px) {
+
+  .group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  header {
+    margin: 0;
+    padding-left: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header nav {
+    padding-top: 15px;
+  }
+
+  form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  form button {
+    width: 15%;
+    justify-content: flex-end;
+  }
+
+  form label {
+  padding: 0px;
+  flex: none;
+  align-self: flex-start;
+  }
+
+  form select,
+  form input {
+    margin: 0;
+    flex: none;
+    align-self: flex-end;
+  }
+
+  #about div {
+    flex: 2;
+  }
+  #about div img {
+    width: 24%;
+  }
+
+  #about div p {
+    align-self: center;
+  }
+
+
+}
