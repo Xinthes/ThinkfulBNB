@@ -104,6 +104,11 @@ form {
   
 }
 
+form .item-double {
+  display: flex;
+  justify-content: space-between;
+}
+
 form label {
   font-weight: bold;
 }
@@ -137,7 +142,7 @@ footer p {
 
 /* -------  Media Query ------- */
 
-@media all and (min-width: 800px) {
+@media all and (min-width: 480px) {
 
   .group {
     display: flex;
@@ -188,6 +193,11 @@ footer p {
 
   #about div p {
     align-self: center;
+  }
+
+  form .item-double {
+    display: flex;
+    justify-content: space-evenly
   }
 
 
